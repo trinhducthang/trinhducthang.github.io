@@ -1,0 +1,80 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.profile-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.profile-card:hover {
+    transform: scale(1.05);
+}
+
+.card-header {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(135deg, #6b73ff, #000dff);
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.card-body {
+    padding: 50px 20px 20px;
+}
+
+.name {
+    margin: 10px 0 5px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.title {
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+.description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-link {
+    color: #555;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-link:hover {
+    color: #000dff;
+}
